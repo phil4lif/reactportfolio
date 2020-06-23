@@ -1,9 +1,10 @@
 import React from 'react'
-
+import RNProjects from './RNProjects'
 export default function PhilLogo() {
     return (
         <div>
             <p style={styles.nameStyle}>Phil Cowan</p>
+            <RNProjects />
         </div>
     )
 }
