@@ -28,7 +28,6 @@ const Header = ({isOpen, setIsOpen}) => {
         <div style={styles.container}>
             <SidePanel setIsOpen={setIsOpen}/>
             <PhilLogo />
-            <DarkModeSwitch />
         </div>
     )
 }

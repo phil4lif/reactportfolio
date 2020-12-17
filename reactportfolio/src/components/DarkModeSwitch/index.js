@@ -18,7 +18,7 @@ const DarkModeSwitch = () => {
             fontFamily: 'Roboto',
             fontSize: 18,
             margin:0,
-            color:colors.text
+            color:colors.background
         },
         switchTrack:{
             width:60,
@@ -50,11 +50,13 @@ const DarkModeSwitch = () => {
     return (
         <div style={styles.container}>
         <p style={styles.label}>Light</p>
+        <a href="#">
         <div onClick={() => switchHandler()} style={styles.switchTrack}>
             <div onClick={() => switchHandler()} 
             style={darkMode ? styles.switchOn : styles.switchOff}>
             </div>
         </div>
+        </a>
         <p style={styles.label}>Dark</p>
         </div>
     )

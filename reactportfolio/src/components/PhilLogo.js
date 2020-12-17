@@ -9,7 +9,7 @@ export default function PhilLogo() {
 
     const styles = {
         nameStyle: {
-            // textAlign:'center',
+            textAlign:'center',
             fontFamily: 'Roboto',
             fontSize: 32,
             color: colors.text,
@@ -22,7 +22,7 @@ export default function PhilLogo() {
 
     return (
         <div style={styles.container}>
-            <p style={styles.nameStyle}>Phil Cowan</p>
+            <p style={styles.nameStyle}>Philip Cowan</p>
         </div>
     )
 }

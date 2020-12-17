@@ -9,7 +9,7 @@ import Footer from '../../components/Footer';
 
 export default function Home() {
     const {darkMode} = useContext(DarkModeContext)
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(true);
 
     const colors = getColors(darkMode);
 
@@ -23,7 +23,7 @@ export default function Home() {
     return (
         <div style={styles.container}>
             <Header setIsOpen={setIsOpen}/>
-            {isOpen ? <OpenSidePanel setIsOpen={setIsOpen} /> : null}
+            <OpenSidePanel isOpen={isOpen} setIsOpen={setIsOpen} />
             <Footer />
         </div>
     )
