@@ -6,10 +6,12 @@ import DarkModeSwitch from '../../components/DarkModeSwitch';
 import Header from '../../components/Header';
 import OpenSidePanel from '../../components/OpenSidePanel';
 import Footer from '../../components/Footer';
+import EmailModal from '../../components/EmailModal';
 
 export default function Home() {
     const {darkMode} = useContext(DarkModeContext)
-    const [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
+    const [modalOpen, setModalOpen] = useState(true);
 
     const colors = getColors(darkMode);
 
@@ -24,6 +26,7 @@ export default function Home() {
         <div style={styles.container}>
             <Header setIsOpen={setIsOpen}/>
             <OpenSidePanel isOpen={isOpen} setIsOpen={setIsOpen} />
+            <EmailModal modalOpen={modalOpen} setModalOpen={setModalOpen} />
             <Footer />
         </div>
     )

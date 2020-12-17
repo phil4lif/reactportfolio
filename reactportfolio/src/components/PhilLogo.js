@@ -22,7 +22,7 @@ export default function PhilLogo() {
 
     return (
         <div style={styles.container}>
-            <p style={styles.nameStyle}>Philip Cowan</p>
+            <p style={styles.nameStyle}>Phil Cowan</p>
         </div>
     )
 }

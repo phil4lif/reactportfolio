@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import PhilLogo from '../PhilLogo';
 import getColors from '../../styles/Styles';
 import DarkModeContext from '../../Context/DarkModeContext';
-import DarkModeSwitch from '../DarkModeSwitch';
 import SidePanel from '../SidePanel';
 
 const Header = ({isOpen, setIsOpen}) => {
@@ -21,13 +20,14 @@ const Header = ({isOpen, setIsOpen}) => {
         backgroundColor: colors.background
         },
         width: {
-            width:1
+            width:24
         }
     }
     return (
         <div style={styles.container}>
-            <SidePanel setIsOpen={setIsOpen}/>
+            <SidePanel setIsOpen={setIsOpen} isOpen={isOpen}/>
             <PhilLogo />
+            <div style={styles.width}></div>
         </div>
     )
 }
