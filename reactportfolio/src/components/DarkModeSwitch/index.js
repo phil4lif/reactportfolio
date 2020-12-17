@@ -12,7 +12,6 @@ const DarkModeSwitch = () => {
         container: {
             display:'flex',
             alignItems:'center',
-            // flex:1
         },
         label:{
             fontFamily: 'Roboto',
@@ -37,14 +36,20 @@ const DarkModeSwitch = () => {
             width:30,
             borderRadius:100,
             backgroundColor: colors.secondary,
-            alignSelf: 'flex-end'
+            position: 'relative',
+            left:30,
+            // alignSelf: 'flex-end',
+            transition: 'left 0.5s'
         },
         switchOff:{
             height:30,
             width:30,
             borderRadius:100,
             backgroundColor: colors.third,
-            alignSelf:'flex-start'
+            position: 'relative',
+            left:1,
+            // alignSelf:'flex-start',
+            transition: 'left 0.5s'
         }
     }
     return (
