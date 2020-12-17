@@ -1,11 +1,12 @@
 import React from 'react'
-import './App.css';
-import PhilLogo from './components/PhilLogo'
+import PhilLogo from './components/PhilLogo';
+import Home from './pages/Home/index'
+import { DarkModeProvider } from './Context/DarkModeContext'
 
 export default function app() {
     return (
-        <div>
-            <PhilLogo />
-        </div>
+        <DarkModeProvider>
+            <Home />
+        </DarkModeProvider>
     )
 }
