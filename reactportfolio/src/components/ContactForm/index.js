@@ -46,10 +46,17 @@ const ContactForm = ({ setModalOpen }) => {
     },
     messageInput: {
       height:160,
-      width: 270
+      width: 270,
+      borderRadius: 15
     },
     emailInput: {
-      width: 270
+      width: 270,
+      height:30,
+      borderRadius: 15
+    },
+    button: {
+      borderRadius:15,
+      width: 60
     }
   }
 
@@ -68,7 +75,7 @@ const ContactForm = ({ setModalOpen }) => {
       <label style={styles.text}>Message to Me</label>
       <textarea style={styles.messageInput} type='text' name='message' />
       <div style={styles.buttonRow}>
-      {status === 'SUCCESS' ? <p>Thanks!</p> : <button style={{width:60}}><span style={styles.text}>Send</span></button>}
+      {status === 'SUCCESS' ? <p>Thanks!</p> : <button style={styles.button}><span style={styles.text}>Send</span></button>}
       {status === 'ERROR' && <p>Ooops! There was an error.</p>}
       </div>
     </form>

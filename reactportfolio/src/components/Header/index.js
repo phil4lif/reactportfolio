@@ -10,14 +10,14 @@ const Header = ({isOpen, setIsOpen}) => {
     const styles = {
         container: {
         display: 'flex',
-        flex: 1,
+        // flex: 1,
         height:60,
         flexDirection: 'row',
         justifyContent: 'flex-start',
         alignItems:'center',
         padding:8,
         flexWrap: 'wrap',
-        backgroundColor: colors.background
+        // backgroundColor: colors.background
         },
         width: {
             width:24
@@ -26,8 +26,6 @@ const Header = ({isOpen, setIsOpen}) => {
     return (
         <div style={styles.container}>
             <SidePanel setIsOpen={setIsOpen} isOpen={isOpen}/>
-            <PhilLogo />
-            <div style={styles.width}></div>
         </div>
     )
 }

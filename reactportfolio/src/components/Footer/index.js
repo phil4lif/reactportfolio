@@ -9,7 +9,7 @@ const Footer = ({setModalOpen}) => {
     const colors = getColors(darkMode);
     const styles = {
         container: {
-            backgroundColor: colors.background,
+            // backgroundColor: colors.background,
             display: 'flex',
             flexDirection: 'row',
             width: '100vw',

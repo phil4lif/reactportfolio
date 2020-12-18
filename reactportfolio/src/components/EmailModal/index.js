@@ -11,16 +11,14 @@ const EmailModal = ({modalOpen, setModalOpen}) => {
             display: 'flex',
             flexDirection: 'column',
             alignSelf:'center',
-            boxShadow: '4px 4px',
             marginTop: 24,
             padding:8,
             zIndex:99,
-            backgroundColor: colors.text,
+            backgroundColor: '#83BCA977',
             height:300,
             width: 400,
             visibility: 'visible',
-            // transition: 'height 1s, width 1.4s',
-            borderRadius: 2
+            borderRadius: 30
         },
         modalContainerClosed: {
             visibility: 'hidden',
@@ -33,7 +31,9 @@ const EmailModal = ({modalOpen, setModalOpen}) => {
         },
         button: {
             marginTop:8,
-            alignSelf: 'center'
+            alignSelf: 'center',
+            borderRadius:15,
+            width: 60
         }
     }
     const closeHandler = () => {

@@ -11,12 +11,12 @@ export default function PhilLogo() {
         nameStyle: {
             textAlign:'center',
             fontFamily: 'Roboto',
-            fontSize: 32,
+            fontSize: 40,
             color: colors.text,
             margin:0
         },
         container: {
-            flex:1
+            // flex:1
         }
     }
 
