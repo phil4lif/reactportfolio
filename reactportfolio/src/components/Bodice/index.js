@@ -13,6 +13,7 @@ const Bodice = () => {
             justifyContent:'center',
             alignItems:'flex-start',
             flexDirection:'row',
+            // backgroundColor:'#00000022'
         },
         spacer: {
             width:48

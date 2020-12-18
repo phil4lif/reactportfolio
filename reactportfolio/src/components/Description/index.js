@@ -4,17 +4,16 @@ const Description = () => {
     const styles = {
         text:{
             fontFamily:'Roboto',
-            fontSize:24,
-            color:'#83BCA9',
+            fontSize:28,
+            color:'#83BCDD',
         },
         container: {
-            width: 300
-
+            width: 380,
         }
     }
     return (
         <div style={styles.container}>
-        <span style={styles.text}>Developer, Bassist, Dog Enthusiast, Naturalist, Friend, Record Collector</span>
+        <span style={styles.text}>Developer, Bassist, Audio Engineer, Dog Enthusiast, Naturalist, Friend, Record Collector, Movie/Popcorn Lover, Aspiring Concert Attendee</span>
         </div>
     )
 }

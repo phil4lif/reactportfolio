@@ -11,8 +11,8 @@ export default function PhilLogo() {
         nameStyle: {
             textAlign:'center',
             fontFamily: 'Roboto',
-            fontSize: 40,
-            color: colors.text,
+            fontSize: 44,
+            color: '#83BCA9',
             margin:0
         },
         container: {
