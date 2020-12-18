@@ -2,8 +2,9 @@ import React, { useContext } from 'react'
 import getColors from '../../styles/Styles';
 import { FaStackOverflow, FaInstagram, FaSpotify, FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import DarkModeContext from '../../Context/DarkModeContext';
+import ModalTrigger from '../ModalTrigger';
 
-const Footer = () => {
+const Footer = ({setModalOpen}) => {
     const { darkMode } = useContext(DarkModeContext);
     const colors = getColors(darkMode);
     const styles = {
@@ -44,6 +45,7 @@ const Footer = () => {
                 <a target="_blank" href="https://www.instagram.com/phil4lif/">
                     <FaInstagram style={styles.icon} size={36} color={colors.text} />
                 </a>
+                <ModalTrigger setModalOpen={setModalOpen} />
             </div>
         </div>
     )

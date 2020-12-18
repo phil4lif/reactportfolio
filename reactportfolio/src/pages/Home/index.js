@@ -7,6 +7,7 @@ import Header from '../../components/Header';
 import OpenSidePanel from '../../components/OpenSidePanel';
 import Footer from '../../components/Footer';
 import EmailModal from '../../components/EmailModal';
+import ModalTrigger from '../../components/ModalTrigger';
 
 export default function Home() {
     const {darkMode} = useContext(DarkModeContext)
@@ -27,7 +28,7 @@ export default function Home() {
             <Header setIsOpen={setIsOpen}/>
             <OpenSidePanel isOpen={isOpen} setIsOpen={setIsOpen} />
             <EmailModal modalOpen={modalOpen} setModalOpen={setModalOpen} />
-            <Footer />
+            <Footer setModalOpen={setModalOpen} />
         </div>
     )
 }
