@@ -12,7 +12,8 @@ const OpenSidePanel = ({setIsOpen, isOpen}) => {
         container: {
             height:600,
             width: 300,
-            backgroundColor: colors.text,
+            backgroundImage: "url('/philandlinkandnavi.jpg')",
+            // backgroundColor: colors.text,
             position: 'absolute',
             left:0,
             zIndex: 1,
@@ -55,7 +56,6 @@ const OpenSidePanel = ({setIsOpen, isOpen}) => {
             <FaAngleLeft style={styles.icon} size={24} color={colors.background} onClick={() => setIsOpen(false)} />
             </a>
             </div>
-            <DarkModeSwitch />
         </div>
     )
 }
